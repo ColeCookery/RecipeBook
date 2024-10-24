@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Main Dishes - My Recipe Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <div id="navbar"></div>
+    
+    <h1>Main Dishes</h1>
+    <p>Click on a recipe to view the details:</p>
+
+    <h2>Recipes</h2>
+    <ul id="recipe-list"></ul> <!-- Empty list to populate with JavaScript -->
+
+    <a href="index.html">Back to Homepage</a>
+
+    <script>
+        // Load recipes from JSON file
+        fetch('recipes.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const recipeList = document.getElementById('recipe-list');
+                
+                // Populate the recipe list for main dishes
+                data.forEach(recipe => {
+                    if (recipe.category === 'Main Dishes') {
+                        const li = document.createElement('li');
+                        li.innerHTML = `<a href="${recipe.link}">${recipe.name}</a>`;
+                        recipeList.appendChild(li);
+                    }
+                });
+            })
+            .catch(error => console.error('Error loading recipes:', error));
+    </script>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+</body>
+</html>
+

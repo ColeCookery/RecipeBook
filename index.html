@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Recipe Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <div id="navbar"></div>
+    
+    <h1>Welcome to the Cole Cookery Recipe Book</h1>
+
+    <h2>Categories</h2>
+    <p>Select a category to explore:</p>
+    <ul>
+        <li><a href="desserts.html">Desserts</a></li>
+        <li><a href="main-dishes.html">Main Dishes</a></li>
+        <!-- Add more categories here -->
+    </ul>
+    
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+    
+</body>
+</html>
