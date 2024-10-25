@@ -3,24 +3,26 @@
 <head>
 
     <title>Main Dishes - My Recipe Collection</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="functions/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 </head>
 <body>
-    <div id="navbar"></div>
+    <div class="header">
+        <div id="navbar"></div>
+        <h1>Main Dishes</h1>
+    </div>
     
-    <h1>Main Dishes</h1>
-    <p>Click on a recipe to view the details:</p>
 
     <h2>Recipes</h2>
+    <p>Click on a recipe to view the details:</p>
     <ul id="recipe-list"></ul> <!-- Empty list to populate with JavaScript -->
-
+    
     <a href="index.html">Back to Homepage</a>
 
     <script>
         // Load recipes from JSON file
-        fetch('recipes.json')
+        fetch('functions/recipes.json')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
@@ -42,10 +44,47 @@
             .catch(error => console.error('Error loading recipes:', error));
     </script>
     <script>
-        fetch('navbar.html')
+        // Function to set up event listeners for the navbar
+        function setupNavbarEventListeners() {
+            const toggleButton = document.querySelector('.menu-toggle');
+            const menuDropdown = document.querySelector('.menu-dropdown');
+            const closeButton = document.querySelector('.close-menu');
+
+            // Check if elements are found
+            if (!toggleButton) {
+                alert('Toggle button not found!');
+                console.error('Toggle button not found!');
+                return;
+            }
+            if (!menuDropdown) {
+                alert('Dropdown menu not found!');
+                console.error('Dropdown menu not found!');
+                return;
+            }
+            if (!closeButton) {
+                alert('Close button not found!');
+                console.error('Close button not found!');
+                return;
+            }
+
+            toggleButton.addEventListener('click', () => {
+                menuDropdown.classList.toggle('show'); // Show or hide the dropdown menu
+            });
+
+            closeButton.addEventListener('click', () => {
+                menuDropdown.classList.remove('show'); // Hide the dropdown menu
+            });
+        }
+
+
+        // Fetching the navbar and inserting it into the page
+        fetch('functions/navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar').innerHTML = data;
+
+                // Call the function to set up event listeners after loading the navbar
+                setupNavbarEventListeners();
             })
             .catch(error => console.error('Error loading navbar:', error));
     </script>

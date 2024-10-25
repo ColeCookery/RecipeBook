@@ -1,0 +1,16 @@
+Open VS Code to edit
+
+to add a new category:
+Create copy of cattemplate.html and rename it to the category name
+Open it and change the 3 {Category Name} to the new name and save
+Add the category to categories.html
+
+to add a new recipe:
+Create copy of template.html and rename it to the recipe name
+Open it and change the 4 {Recipe Title} to the new name
+Replace the {Image URL} with the file location of the image
+	ex/ pictures/chocolate-cake.jpg
+Paste in the ingredients paragraph
+Paste in the instructions paragraph
+Add the recipe to recipes.json
+	fill in name, link, and category

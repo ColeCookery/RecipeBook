@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Spaghetti Bolognese - My Recipe Collection</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="functions/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
@@ -35,7 +35,7 @@
 
     <a href="main-dishes.html">Back to Main Dishes</a> | <a href="index.html">Back to Homepage</a>
     <script>
-        fetch('navbar.html')
+        fetch('functions/navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar').innerHTML = data;

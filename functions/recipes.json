@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Chocolate Cake",
+        "link": "chocolate-cake.html",
+        "category": "Desserts"
+    },
+    {
+        "name": "Spaghetti Bolognese",
+        "link": "spaghetti-bolognese.html",
+        "category": "Main Dishes"
+    },
+    {
+        "name": "Cast Iron Chicken Breast with Creamy Spinach Tomato Feta Sauce",
+        "link": "Cast_Iron_Chicken_Breast_with_Creamy_Spinach_Tomato_Feta_Sauce.html",
+        "category": "Main Dishes"
+    }
+    
+]

@@ -13,12 +13,12 @@
 
     <h2>Ingredients</h2>
     <pre>
-        paste ingredients here
+{Ingredients}
     </pre>
 
     <h2>Instructions</h2>
     <pre>
-        paste instructions here
+{Instructions}
     </pre>
     
     <a href="#" id="category-link"></a> | <a href="index.html">Back to Homepage</a>

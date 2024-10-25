@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Chocolate Cake - My Recipe Collection</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="functions/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
@@ -10,7 +10,7 @@
     <div id="navbar"></div>
     
     <h1>Chocolate Cake</h1>
-    <img src="chocolate-cake.jpg" alt="A delicious chocolate cake" width="300">
+    <img src="pictures/chocolate-cake.jpg" alt="A delicious chocolate cake" width="300">
     
     <h2>Ingredients</h2>
     <ul>
@@ -34,7 +34,7 @@
 
     <a href="desserts.html">Back to Desserts</a> | <a href="index.html">Back to Homepage</a>
     <script>
-        fetch('navbar.html')
+        fetch('functions/navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar').innerHTML = data;
