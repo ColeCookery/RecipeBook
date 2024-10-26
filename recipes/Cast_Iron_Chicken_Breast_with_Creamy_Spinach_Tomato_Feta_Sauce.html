@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cast Iron Chicken Breast with Creamy Spinach Tomato Feta Sauce</title>
+    <link rel="stylesheet" href="/functions/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="header">
+        <div id="navbar"></div>
+        
+    </div>
+
+    <h1>Cast Iron Chicken Breast with Creamy Spinach Tomato Feta Sauce</h1>
+    <img src="../pictures/feta_chicken.jpg" alt="Cast Iron Chicken Breast with Creamy Spinach Tomato Feta Sauce">
+
+    <h2>Ingredients</h2>
+    <pre>
+Chicken Breasts
+Block of Feta Cheese
+Cherry Tomatoes
+Cream
+Spinach
+Olive Oil
+Red Pepper Flakes
+Dill
+Salt & Pepper
+    </pre>
+
+    <h2>Instructions</h2>
+    <pre>
+Preheat oven to 350
+Heat up pan on stove
+Add a splash of olive oil
+Season chicken with salt & pepper and add to pan
+Sear both sides until golden-brown crust forms
+Place block of feta into center of pan
+Add in cherry tomatoes into gaps
+Add in another splash of olive oil
+Sprinkle with dill and red pepper flakes
+Put in oven for about 10-15 minutes
+Chicken should be fully cooked and cheese melty
+Remove chicken from pan and set aside
+Add a splash of cream to pan and stir to make the sauce
+For a thinner sauce you can add more cream
+Add fresh spinach and put back into oven for a few minutes
+Remove from oven and add chicken back to sauce
+Can be served over pasta or with bread
+    </pre>
+    
+    <a href="#" id="category-link"></a> | <a href="../index.html">Back to Homepage</a>
+
+
+    <script>
+        // Function to set up event listeners for the navbar
+        function setupNavbarEventListeners() {
+            const toggleButton = document.querySelector('.menu-toggle');
+            const menuDropdown = document.querySelector('.menu-dropdown');
+            const closeButton = document.querySelector('.close-menu');
+
+            // Check if elements are found
+            if (!toggleButton) {
+                alert('Toggle button not found!');
+                console.error('Toggle button not found!');
+                return;
+            }
+            if (!menuDropdown) {
+                alert('Dropdown menu not found!');
+                console.error('Dropdown menu not found!');
+                return;
+            }
+            if (!closeButton) {
+                alert('Close button not found!');
+                console.error('Close button not found!');
+                return;
+            }
+
+            toggleButton.addEventListener('click', () => {
+                menuDropdown.classList.toggle('show'); // Show or hide the dropdown menu
+            });
+
+            closeButton.addEventListener('click', () => {
+                menuDropdown.classList.remove('show'); // Hide the dropdown menu
+            });
+        }
+    
+        // Fetching the navbar and inserting it into the page
+        fetch('/functions/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+
+        // Fetch recipe data and update the category link
+        const recipeName = "Cast Iron Chicken Breast with Creamy Spinach Tomato Feta Sauce"; // Replace this with the actual recipe title dynamically
+    
+        fetch('/functions/recipes.json')
+            .then(response => response.json())
+            .then(data => {
+                const recipe = data.find(r => r.name === recipeName);
+                if (recipe) {
+                    const categoryLink = document.getElementById('category-link');
+                    categoryLink.href = `../${recipe.category.toLowerCase().replace(' ', '-')}.html`;
+                    categoryLink.innerText = `Back to ${recipe.category}`;
+                } else {
+                    console.error('Recipe not found:', recipeName);
+                }
+            })
+            .catch(error => console.error('Error loading recipes:', error));
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Entrees",
+        "link": "main-dishes.html",
+        "image": "pictures/main.png" 
+    },
+    {
+        "name": "Pasta",
+        "link": "pasta.html",
+        "image": "pictures/spaguetti.png" 
+    },
+    {
+        "name": "Mexican",
+        "link": "mexican.html",
+        "image": "pictures/taco.png" 
+    },
+    {
+        "name": "Asian",
+        "link": "asian.html",
+        "image": "pictures/noodles.png" 
+    },
+    {
+        "name": "Soups & Stews",
+        "link": "soup.html",
+        "image": "pictures/soup.png" 
+    },
+    {
+        "name": "Sandwiches",
+        "link": "sandwiches.html",
+        "image": "pictures/sandwich.png" 
+    },
+    {
+        "name": "Pizza",
+        "link": "pizza.html",
+        "image": "pictures/pizza.png" 
+    },
+    {
+        "name": "Appetizers",
+        "link": "apps.html",
+        "image": "pictures/appetizer.png" 
+    },
+    {
+        "name": "Breakfast",
+        "link": "breakfast.html",
+        "image": "pictures/breakfast.png" 
+    },
+    {
+        "name": "Dessert",
+        "link": "desserts.html",
+        "image": "pictures/sweets.png" 
+    }
+    
+]

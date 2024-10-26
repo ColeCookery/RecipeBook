@@ -80,16 +80,52 @@ img {
     border-radius: 8px;
 }
 
-/* Recipe list styles */
-#recipe-list {
-    text-decoration: none; /* Remove underline */
-    list-style-type: none;
-    padding: 0;
+/* Apply grid to the #cats container */
+#cats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    max-width: 800px; /* Set a max width to center within the screen */
+    margin: 0 auto; /* Center the grid container */
+    
 }
 
-#recipe-list li {
-    text-decoration: none; /* Remove underline */
-    margin: 5px 0;
+/* Apply grid to the #cats container */
+#recipe-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    
+    margin: 0 auto; /* Center the grid container */
+    
+}
+
+/* Style for each category tile */
+.category-tile {
+    text-align: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.category-tile img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.category-tile:hover {
+    transform: scale(1.05);
+}
+
+.category-tile span {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
 }
 
 /* Input field styles */
@@ -114,7 +150,7 @@ input[type="text"] {
 }
 
 .recipe img {
-    max-width: 100%;
+    max-width: 50%;
 }
 
 
