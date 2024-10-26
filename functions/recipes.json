@@ -2,24 +2,24 @@
     {
         "name": "Chocolate Cake",
         "link": "recipes/chocolate-cake.html",
-        "category": "Desserts"
+        "category": "desserts"
     },
     {
         "name": "Spaghetti Bolognese",
         "link": "spaghetti-bolognese.html",
-        "category": "Pasta"
+        "category": "pasta"
     },
     {
         "name": "Cast Iron Chicken Breast with Creamy Spinach Tomato Feta Sauce",
-        "link": "recipes/Cast_Iron_Chicken_Breast_with_Creamy_Spinach_Tomato_Feta_Sauce.html",
-        "image": "../pictures/feta_chicken.jpg",
-        "category": "Pasta"
+        "link": "2Cast_Iron_Chicken_Breast_with_Creamy_Spinach_Tomato_Feta_Sauce.html",
+        "image": "pictures/feta_chicken.jpg",
+        "category": "entrees"
     },
     {
-        "name": "Cast Iron Chicken Breast with Creamy Spinach Tomato Feta Sauce",
-        "link": "recipes/Cast_Iron_Chicken_Breast_with_Creamy_Spinach_Tomato_Feta_Sauce.html",
-        "image": "../pictures/feta_chicken.jpg",
-        "category": "Mexican"
+        "name": "Chili",
+        "link": "2Chili.html",
+        "image": "pictures/feta_chicken.jpg",
+        "category": "soup"
     },
     {
         "name": "Cast Iron Chicken Breast with Creamy Spinach Tomato Feta Sauce",

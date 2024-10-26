@@ -1,26 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Recipe Website</title>
+    <title>Pizza - My Recipe Collection</title>
     <link rel="stylesheet" href="functions/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    
     <div class="header">
         <div id="navbar"></div>
-        <h1>Cole Cookery Recipes</h1>
+        <h1>Pizza</h1>
     </div>
 
+    <h2>Recipes</h2>
     
-    <h2>Categories</h2>
-    
-
     <div class="groups">
-        <div id="cats"></div>
+        <div id="recipe-list"></div>
     </div>
-    
+
+    <script>
+        // Load recipes from JSON file
+        fetch('functions/recipes.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const recipeList = document.getElementById('recipe-list');
+
+                data.forEach(recipe => {
+                    if (recipe.category === 'pizza') { // Only include recipes from the category
+                        
+                        const recipeDiv = document.createElement('div');
+                        recipeDiv.className = 'category-tile'; // Add a class for styling each recipe
+
+                        // Add HTML structure with link, image, and name
+                        recipeDiv.innerHTML = `
+                            <a href="${recipe.link}">
+                                <img src="${recipe.image}" alt="${recipe.name}">
+                                <span>${recipe.name}</span>
+                            </a>
+                        `;
+
+                        recipeList.appendChild(recipeDiv); // Add recipeDiv to recipeList container
+                    }
+                });
+            })
+            .catch(error => console.error('Error loading recipes:', error));
+
+    </script>
     <script>
         // Function to set up event listeners for the navbar
         function setupNavbarEventListeners() {
@@ -54,6 +83,7 @@
             });
         }
 
+
         // Fetching the navbar and inserting it into the page
         fetch('navbar.html')
             .then(response => response.text())
@@ -65,37 +95,7 @@
             })
             .catch(error => console.error('Error loading navbar:', error));
     </script>
-    <script>
-        // Load categories from JSON file
-        fetch('functions/categories.json')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                const catsDiv = document.getElementById('cats');
-    
-                // Populate the categories
-                data.forEach(category => {
-                    const categoryDiv = document.createElement('div');
-                    categoryDiv.className = 'category-tile'; // Add a class for styling
-    
-                    // Create the anchor tag with image
-                    categoryDiv.innerHTML = `
-                        <a href="${category.link}">
-                            <img src="${category.image}" alt="${category.name}">
-                            <span>${category.name}</span>
-                        </a>
-                    `;
-                    catsDiv.appendChild(categoryDiv);
-                });
-            })
-            .catch(error => console.error('Error loading categories:', error));
-    </script>
-    
-
 
 </body>
 </html>
+

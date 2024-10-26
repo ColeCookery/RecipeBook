@@ -1,52 +1,52 @@
 [
     {
         "name": "Entrees",
-        "link": "main-dishes.html",
+        "link": "1entrees.html",
         "image": "pictures/main.png" 
     },
     {
         "name": "Pasta",
-        "link": "pasta.html",
+        "link": "1pasta.html",
         "image": "pictures/spaguetti.png" 
     },
     {
         "name": "Mexican",
-        "link": "mexican.html",
+        "link": "1mexican.html",
         "image": "pictures/taco.png" 
     },
     {
         "name": "Asian",
-        "link": "asian.html",
+        "link": "1asian.html",
         "image": "pictures/noodles.png" 
     },
     {
         "name": "Soups & Stews",
-        "link": "soup.html",
+        "link": "1soup.html",
         "image": "pictures/soup.png" 
     },
     {
         "name": "Sandwiches",
-        "link": "sandwiches.html",
+        "link": "1sandwiches.html",
         "image": "pictures/sandwich.png" 
     },
     {
         "name": "Pizza",
-        "link": "pizza.html",
+        "link": "1pizza.html",
         "image": "pictures/pizza.png" 
     },
     {
         "name": "Appetizers",
-        "link": "apps.html",
+        "link": "1apps.html",
         "image": "pictures/appetizer.png" 
     },
     {
         "name": "Breakfast",
-        "link": "breakfast.html",
+        "link": "1breakfast.html",
         "image": "pictures/breakfast.png" 
     },
     {
         "name": "Dessert",
-        "link": "desserts.html",
+        "link": "1desserts.html",
         "image": "pictures/sweets.png" 
     }
     

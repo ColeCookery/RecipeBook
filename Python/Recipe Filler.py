@@ -6,7 +6,8 @@ import os
 def write_to_file(recipe_title, ingredients, instructions, image_url):
     # Ensure recipe_title is a string and strip it of extra spaces
     recipe_title_value = recipe_title.strip().replace(" ", "_")  # Remove spaces from title for filename
-    filename = f"{recipe_title_value}.html"
+    filename = f"2{recipe_title_value}.html"
+    backup = f"{recipe_title_value}.txt"
     
     try:
         # Get the absolute path to the directory where this script is located
@@ -32,6 +33,19 @@ def write_to_file(recipe_title, ingredients, instructions, image_url):
         # Show a success message
         messagebox.showinfo("Success", f"Recipe has been saved as {filename}!")
     except FileNotFoundError:
+        # Write the updated content to a new text file using the Recipe Title as the filename
+        newcontent = f"""
+{recipe_title}
+Ingredients:
+{ingredients}
+
+Instructions:
+{instructions}
+
+Image: {image_url}
+"""     
+        with open(backup, "w") as file:
+            file.write(newcontent)
         messagebox.showerror("Error", "Template file not found!")
 
 
@@ -59,7 +73,7 @@ def next_step():
         current_step += 1
     elif current_step == 2:
         instructions.set(instructions_text.get("1.0", tk.END).strip())  # Get multiline input
-        label.config(text="Enter Image URL:")
+        label.config(text="Enter Image File Name:")
         instructions_text.pack_forget()  # Hide the instructions text box
 
         # Show the Image URL single-line entry
@@ -103,8 +117,8 @@ entry = tk.Entry(root, width=50, font=entry_font, relief="flat", highlightbackgr
 entry.pack(pady=10)
 
 # Multiline Text widgets for Ingredients and Instructions
-ingredients_text = tk.Text(root, width=50, height=5, font=entry_font, relief="flat", highlightbackground="#cccccc", highlightthickness=1)
-instructions_text = tk.Text(root, width=50, height=5, font=entry_font, relief="flat", highlightbackground="#cccccc", highlightthickness=1)
+ingredients_text = tk.Text(root, width=50, height=10, font=entry_font, relief="flat", highlightbackground="#cccccc", highlightthickness=1)
+instructions_text = tk.Text(root, width=50, height=10, font=entry_font, relief="flat", highlightbackground="#cccccc", highlightthickness=1)
 
 # Entry widget for Image URL (single-line input)
 image_url_entry = tk.Entry(root, width=50, font=entry_font, relief="flat", highlightbackground="#cccccc", highlightthickness=1)
