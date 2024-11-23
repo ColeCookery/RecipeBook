@@ -218,38 +218,33 @@ h2, h3, h4 {
 
 }
 
-/* Paragraphs */
-p {
-    font-family: "Austen-Regular", sans-serif ;
-    margin: 0 0 10px;
+.searchlist ul li{
+    list-style-type: disc; /* Add bullet points */
 }
 
-ul li a {
+.searchlist ul li a {
     font-family: 'Bitter', serif;
-    text-decoration: none;
     color: #2c3e50;
     font-size: 1.1rem;
     padding: 10px;
     display: block;
     border-radius: 5px;
+    list-style-type: disc; /* Add bullet points */
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-ul li a:hover {
+.searchlist ul li a:hover {
     background-color: #ecf0f1;
     color: #3498db;
     transform: translateX(5px); /* Slide effect */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-ul li a:focus {
+.searchlist ul li:focus {
     outline: 2px solid #3498db;
     outline-offset: 2px;
 }
 
-.searchlist ul li {
-    list-style-type: disc; /* Add bullet points */
-}
 
 ul li {
     margin-bottom: 10px;
