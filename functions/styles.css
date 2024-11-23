@@ -232,7 +232,6 @@ ul li a {
     padding: 10px;
     display: block;
     border-radius: 5px;
-    
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
@@ -248,11 +247,13 @@ ul li a:focus {
     outline-offset: 2px;
 }
 
+.searchlist ul li {
+    list-style-type: disc; /* Add bullet points */
+}
+
 ul li {
-    list-style-type: disc;
     margin-bottom: 10px;
     border-radius: 8px;
-    background-color: #f9f9f9;
 }
 
 a {
@@ -484,7 +485,9 @@ nav ul li a:hover {
     margin: 15px 0; /* Space between links */
 }
 
+
 .menu-dropdown a {
+    
     color: white;
     text-decoration: none; /* No underline */
     font-size: 1.5em; /* Increase font size for visibility */
