@@ -22,10 +22,10 @@
         "category": "soup"
     },
     {
-        "name": "Cast Iron Chicken Breast with Creamy Spinach Tomato Feta Sauce",
-        "link": "recipes/Cast_Iron_Chicken_Breast_with_Creamy_Spinach_Tomato_Feta_Sauce.html",
-        "image": "../pictures/feta_chicken.jpg",
-        "category": "Main Dishes"
+        "name": "Pulled Pork",
+        "link": "2Pulled_Pork.html",
+        "image": "pictures/Pulled_Pork.jpg",
+        "category": "entrees"
     },
     {
         "name": "Cast Iron Chicken Breast with Creamy Spinach Tomato Feta Sauce",

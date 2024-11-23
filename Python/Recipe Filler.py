@@ -81,6 +81,7 @@ def next_step():
         current_step += 1
     elif current_step == 3:
         image_url.set(image_url_entry.get())
+
         # Write the data into the file
         write_to_file(recipe_title.get(), ingredients.get(), instructions.get(), image_url.get())
         root.quit()  # Close the window after saving

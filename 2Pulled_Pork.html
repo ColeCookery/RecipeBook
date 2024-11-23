@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{Recipe Title}</title>
+    <title>Pulled Pork</title>
     <link rel="stylesheet" href="functions/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -16,9 +16,9 @@
     <!-- Main Content Wrapper -->
     <main class="recipe-page">
         <header class="recipe-header">
-            <h1>{Recipe Title}</h1>
+            <h1>Pulled Pork</h1>
             <div class="image-container">
-                <img class="recipe-image" src="pictures/{Image URL}" alt="{Recipe Title}">
+                <img class="recipe-image" src="pictures/Pulled_Pork.jpg" alt="Pulled Pork">
             </div>
         </header>
 
@@ -26,14 +26,35 @@
         <section class="ingredients">
             <h2>Ingredients</h2>
             <pre>
-                {Ingredients}
+Pork Butt/Shoulder
+Neutral Oil
+Apple Cider Vinegar
+BBQ Sauce
+BBQ Seasoning Mix
+    Cumin
+    Paprika
+    Chili Powder
+    Garlic Powder
+    Onion Powder
+    Oregano
+    Salt & Pepper
             </pre>
         </section>
 
         <!-- Instructions Section -->
         <section class="instructions">
             <h2>Instructions</h2>
-            <pre>{Instructions}</pre>
+            <pre>
+Preheat oven to 325
+Coat dutch oven with neutral oil
+Trim off excess fat/sinew from the cut of pork
+Cut pork into smaller chunks
+Generously cover pork with seasoning mix 
+Add a splash of water and/or apple cider vinegar
+Cover and bake for 3 hours or until it starts to fall apart
+Take out of oven and shred in the pot
+Mix in BBQ sauce to shredded pork and serve
+            </pre>
         </section>
 
         <!-- Links Section -->
@@ -41,7 +62,7 @@
             <a href="#" id="category-link">Back to Category</a> | <a href="index.html">Back to Homepage</a>
         </footer>
     </main>
-
+    
     <script>
         // Function to set up event listeners for the navbar
         function setupNavbarEventListeners() {
@@ -71,6 +92,7 @@
             });
 
             closeButton.addEventListener('click', () => {
+                console.log("Close button clicked");
                 menuDropdown.classList.remove('show'); // Hide the dropdown menu
             });
         }
@@ -80,11 +102,13 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar').innerHTML = data;
+                
+                setupNavbarEventListeners();
             })
             .catch(error => console.error('Error loading navbar:', error));
 
         // Fetch recipe data and update the category link
-        const recipeName = "{Recipe Title}"; // Replace this with the actual recipe title dynamically
+        const recipeName = "Pulled Pork"; // Replace this with the actual recipe title dynamically
     
         fetch('functions/recipes.json')
             .then(response => response.json())

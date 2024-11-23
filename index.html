@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>My Recipe Website</title>
     <link rel="stylesheet" href="functions/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -85,7 +86,7 @@
                     // Create the anchor tag with image
                     categoryDiv.innerHTML = `
                         <a href="${category.link}">
-                            <img src="${category.image}" alt="${category.name}">
+                            <img class="cat-icon" src="${category.image}" alt="${category.name}">
                             <span>${category.name}</span>
                         </a>
                     `;

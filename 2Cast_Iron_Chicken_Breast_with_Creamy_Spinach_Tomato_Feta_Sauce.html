@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Cast Iron Chicken Breast with Creamy Spinach Tomato Feta Sauce</title>
     <link rel="stylesheet" href="functions/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+    <!-- Navbar -->
     <div class="header">
         <div id="navbar"></div>
         
     </div>
 
-    <h1>Cast Iron Chicken Breast with Creamy Spinach Tomato Feta Sauce</h1>
-    <img src="pictures/feta_chicken.jpg" alt="Cast Iron Chicken Breast with Creamy Spinach Tomato Feta Sauce">
+    <!-- Main Content Wrapper -->
+    <main class="recipe-page">
+        <header class="recipe-header">
+            <h1>Cast Iron Chicken Breast with Creamy Spinach Tomato Feta Sauce</h1>
+            <div class="image-container">
+                <img class="recipe-image" src="pictures/feta_chicken.jpg" alt="Cast Iron Chicken Breast with Creamy Spinach Tomato Feta Sauce">
+            </div>
+        </header>
 
-    <h2>Ingredients</h2>
-    <pre>
+        <!-- Ingredients Section -->
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <pre>
 Chicken Breasts
 Block of Feta Cheese
 Cherry Tomatoes
@@ -25,10 +35,13 @@ Olive Oil
 Red Pepper Flakes
 Dill
 Salt & Pepper
-    </pre>
+            </pre>
+        </section>
 
-    <h2>Instructions</h2>
-    <pre>
+        <!-- Instructions Section -->
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <pre>
 Preheat oven to 350
 Heat up pan on stove
 Add a splash of olive oil
@@ -46,10 +59,14 @@ For a thinner sauce you can add more cream
 Add fresh spinach and put back into oven for a few minutes
 Remove from oven and add chicken back to sauce
 Can be served over pasta or with bread
-    </pre>
-    
-    <a href="#" id="category-link"></a> | <a href="index.html">Back to Homepage</a>
+            </pre>
+        </section>
 
+        <!-- Links Section -->
+        <footer class="recipe-footer">
+            <a href="#" id="category-link">Back to Category</a> | <a href="index.html">Back to Homepage</a>
+        </footer>
+    </main>
 
     <script>
         // Function to set up event listeners for the navbar

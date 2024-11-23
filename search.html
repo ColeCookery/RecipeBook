@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Search Recipes</title>
     <link rel="stylesheet" href="functions/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     
 </head>
 <body>
@@ -15,9 +15,12 @@
     <input type="text" id="search" placeholder="Search for recipes...">
     
     <h2>All Recipes</h2>
-    <ul id="recipe-list"></ul> <!-- Empty list to populate with JavaScript -->
+    <ul id="recipe-list"> </ul>  <!-- Empty list to populate with JavaScript -->
 
-    <a href="index.html">Back to Homepage</a>
+    <!-- Links Section -->
+    <footer class="recipe-footer">
+        <a href="index.html">Back to Homepage</a>
+    </footer>
 
     <script>
         // Load recipes from JSON file
@@ -86,7 +89,7 @@
 
 
         // Fetching the navbar and inserting it into the page
-        fetch('functions/navbar.html')
+        fetch('navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar').innerHTML = data;
