@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{Recipe Title}</title>
+    <title>Twice Baked Mini Potatoes</title>
     <link rel="stylesheet" href="functions/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -16,9 +16,9 @@
     <!-- Main Content Wrapper -->
     <main class="recipe-page">
         <header class="recipe-header">
-            <h1>{Recipe Title}</h1>
+            <h1>Twice Baked Mini Potatoes</h1>
             <div class="image-container">
-                <img class="recipe-image" src="pictures/{Image URL}" alt="{Recipe Title}">
+                <img class="recipe-image" src="pictures/2bpotatoes" alt="Twice Baked Mini Potatoes">
             </div>
         </header>
 
@@ -26,14 +26,33 @@
         <section class="ingredients">
             <h2>Ingredients</h2>
             <pre>
-                {Ingredients}
+Baby Potatoes
+Oil
+Shredded Cheese
+Butter
+Milk
+Bacon Crumbles
+Chives or Scallions
+Salt & Pepper
             </pre>
         </section>
 
         <!-- Instructions Section -->
         <section class="instructions">
             <h2>Instructions</h2>
-            <pre>{Instructions}</pre>
+            <pre>Preheat oven to 450
+Place 2 tablespoons of butter into a bowl
+Rinse potatoes and pierce each with a fork 
+Microwave in a single layer for 4 minutes
+Halve each potato and scoop out soft middle into the bowl
+Lay out potato skins cut side down on a baking sheet
+Coat with oil and sprinkle with salt
+Bake for 15 minutes
+In the bowl, add a splash of milk and cheese and mix
+Season with salt & pepper
+Spoon or pipe mixture back into baked potato skins
+Broil until tops look melty and crispy
+Top with bacon crumbles & garnish</pre>
         </section>
 
         <!-- Links Section -->
@@ -84,7 +103,7 @@
             .catch(error => console.error('Error loading navbar:', error));
 
         // Fetch recipe data and update the category link
-        const recipeName = "{Recipe Title}"; // Replace this with the actual recipe title dynamically
+        const recipeName = "Twice Baked Mini Potatoes"; // Replace this with the actual recipe title dynamically
     
         fetch('functions/recipes.json')
             .then(response => response.json())

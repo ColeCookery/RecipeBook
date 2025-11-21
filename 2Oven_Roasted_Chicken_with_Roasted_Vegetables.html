@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{Recipe Title}</title>
+    <title>Oven Roasted Chicken with Roasted Vegetables</title>
     <link rel="stylesheet" href="functions/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -16,9 +16,9 @@
     <!-- Main Content Wrapper -->
     <main class="recipe-page">
         <header class="recipe-header">
-            <h1>{Recipe Title}</h1>
+            <h1>Oven Roasted Chicken with Roasted Vegetables</h1>
             <div class="image-container">
-                <img class="recipe-image" src="pictures/{Image URL}" alt="{Recipe Title}">
+                <img class="recipe-image" src="pictures/roasted_chicken.png" alt="Oven Roasted Chicken with Roasted Vegetables">
             </div>
         </header>
 
@@ -26,14 +26,36 @@
         <section class="ingredients">
             <h2>Ingredients</h2>
             <pre>
-                {Ingredients}
+Whole Chicken
+Onion
+Garlic
+Carrots
+Lemon
+Fresh Bunch of Thyme
+Butter
+Olive Oil
+Salt & Pepper
             </pre>
         </section>
 
         <!-- Instructions Section -->
         <section class="instructions">
             <h2>Instructions</h2>
-            <pre>{Instructions}</pre>
+            <pre>Preheat oven to 425
+Discard any giblets or innards from the chicken
+Rinse the chicken inside and out and then pat dry with paper towels and set aside
+Chop onion into vertical slices
+Cut off top of garlic bulb to expose the cloves
+Roll cut carrots into inch long pieces
+Quarter Lemon
+In a roasting pan, mix onions and carrots and half of thyme with olive oil and season
+Liberally Salt the cavity of the chicken
+Insert chopped garlic bulb, lemon, and half of thyme into cavity
+Place chicken over the vegetables in the roasting pan
+Coat the chicken with melted butter
+Season with salt & pepper
+Roast in oven for about 1 hour 15 minutes (depends on size of chicken)
+Let rest for 10-15 minutes before slicing and serving</pre>
         </section>
 
         <!-- Links Section -->
@@ -84,7 +106,7 @@
             .catch(error => console.error('Error loading navbar:', error));
 
         // Fetch recipe data and update the category link
-        const recipeName = "{Recipe Title}"; // Replace this with the actual recipe title dynamically
+        const recipeName = "Oven Roasted Chicken with Roasted Vegetables"; // Replace this with the actual recipe title dynamically
     
         fetch('functions/recipes.json')
             .then(response => response.json())

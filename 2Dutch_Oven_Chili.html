@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{Recipe Title}</title>
+    <title>Dutch Oven Chili</title>
     <link rel="stylesheet" href="functions/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -16,9 +16,9 @@
     <!-- Main Content Wrapper -->
     <main class="recipe-page">
         <header class="recipe-header">
-            <h1>{Recipe Title}</h1>
+            <h1>Dutch Oven Chili</h1>
             <div class="image-container">
-                <img class="recipe-image" src="pictures/{Image URL}" alt="{Recipe Title}">
+                <img class="recipe-image" src="pictures/chili.jpg" alt="Dutch Oven Chili">
             </div>
         </header>
 
@@ -26,14 +26,43 @@
         <section class="ingredients">
             <h2>Ingredients</h2>
             <pre>
-                {Ingredients}
+Ground Turkey
+Onion
+Garlic
+Can of Whole Peeled Tomatoes
+Can of Tomato Paste
+Can of Kidney Beans
+Can of Black Beans
+Poblano Pepper
+Chili Powder
+Ground Cumin
+Paprika
+Cayenne Pepper
+Dried Oregano
+Neutral Oil
+Salt & Pepper
             </pre>
         </section>
 
         <!-- Instructions Section -->
         <section class="instructions">
             <h2>Instructions</h2>
-            <pre>{Instructions}</pre>
+            <pre>Dice onion and garlic and pepper
+Heat Dutch Oven over medium-high heat
+Add a splash of oil and add in diced onion
+After a few minutes add in diced garlic and cook for a few more minutes
+Push onions and garlic to the edges of the pot and add the meat to the center
+Let the meat sit for a couple minutes until it starts to brown
+Sprinkle in all of the seasonings on top
+Go in with a wooden spatula and scrape the pan and mix it all together
+Add a splash of water to help deglaze if needed
+Lower the heat to simmer
+After all of the meat is mostly cooked add in the tomato paste and mix
+Next, add the whole peeled tomatoes and crush and mix them in as well
+Drain the liquid from the beans and add them in
+Add the diced pepper and a splash of water
+Mix it all together and simmer covered for at least 1 hour, stirring occasionally
+Remove the lid and continue to simmer until desired thickness</pre>
         </section>
 
         <!-- Links Section -->
@@ -84,7 +113,7 @@
             .catch(error => console.error('Error loading navbar:', error));
 
         // Fetch recipe data and update the category link
-        const recipeName = "{Recipe Title}"; // Replace this with the actual recipe title dynamically
+        const recipeName = "Dutch Oven Chili"; // Replace this with the actual recipe title dynamically
     
         fetch('functions/recipes.json')
             .then(response => response.json())

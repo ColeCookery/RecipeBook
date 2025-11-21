@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{Recipe Title}</title>
+    <title>Momma's Meatloaf</title>
     <link rel="stylesheet" href="functions/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -16,9 +16,9 @@
     <!-- Main Content Wrapper -->
     <main class="recipe-page">
         <header class="recipe-header">
-            <h1>{Recipe Title}</h1>
+            <h1>Momma's Meatloaf</h1>
             <div class="image-container">
-                <img class="recipe-image" src="pictures/{Image URL}" alt="{Recipe Title}">
+                <img class="recipe-image" src="pictures/meatloaf.png" alt="Momma's Meatloaf">
             </div>
         </header>
 
@@ -26,14 +26,43 @@
         <section class="ingredients">
             <h2>Ingredients</h2>
             <pre>
-                {Ingredients}
+Ground Beef or Turkey
+Onion
+Garlic
+Breadcrumbs
+Tomato Sauce
+Egg
+Worcestershire Sauce
+Salt & Pepper
+Glaze
+    Ketchup (Tomato Sauce)
+    Brown Sugar
+    Grainy Mustard
             </pre>
         </section>
 
         <!-- Instructions Section -->
         <section class="instructions">
             <h2>Instructions</h2>
-            <pre>{Instructions}</pre>
+            <pre>Preheat oven to 350
+Dice onion and a few garlic gloves
+Heat in pan over medium heat 
+Combine in large bowl: 
+    1.5 lbs ground meat
+    1 egg
+    1 cup breadcrumbs (if too sticky add more)
+    1/2 cup tomato sauce (if too dry add more)
+    Splash of Worcestershire sauce
+    Season with salt & pepper
+Mix with spatula or hands until homogenous
+Mix in onion and garlic once they are translucent
+Put mixture into loaf pan (can line with parchment paper for easier removal)
+Mix together glaze:
+    1/4 cup of ketchup (or tomato sauce)
+    1 tbsp brown sugar
+    1 tbsp grainy mustard
+Smooth top of mixture in loaf pan and brush liberally with glaze
+Cook in oven for 60-75 minutes or until proper internal temperature</pre>
         </section>
 
         <!-- Links Section -->
@@ -84,7 +113,7 @@
             .catch(error => console.error('Error loading navbar:', error));
 
         // Fetch recipe data and update the category link
-        const recipeName = "{Recipe Title}"; // Replace this with the actual recipe title dynamically
+        const recipeName = "Momma's Meatloaf"; // Replace this with the actual recipe title dynamically
     
         fetch('functions/recipes.json')
             .then(response => response.json())

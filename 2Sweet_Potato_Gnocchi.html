@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{Recipe Title}</title>
+    <title>Handmade Sweet Potato Gnocchi with Brown Butter Sage Sauce and Parmesan</title>
     <link rel="stylesheet" href="functions/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -16,9 +16,9 @@
     <!-- Main Content Wrapper -->
     <main class="recipe-page">
         <header class="recipe-header">
-            <h1>{Recipe Title}</h1>
+            <h1>Handmade Sweet Potato Gnocchi with Brown Butter Sage Sauce and Parmesan</h1>
             <div class="image-container">
-                <img class="recipe-image" src="pictures/{Image URL}" alt="{Recipe Title}">
+                <img class="recipe-image" src="pictures/SPgnocchi.jpg" alt="Handmade Sweet Potato Gnocchi with Brown Butter Sage Sauce and Parmesan">
             </div>
         </header>
 
@@ -26,14 +26,39 @@
         <section class="ingredients">
             <h2>Ingredients</h2>
             <pre>
-                {Ingredients}
+Sweet Potato
+Flour
+Butter
+Fresh Sage
+Parmesan
+Salt & Pepper
             </pre>
         </section>
 
         <!-- Instructions Section -->
         <section class="instructions">
             <h2>Instructions</h2>
-            <pre>{Instructions}</pre>
+            <pre>Preheat oven to 350
+Pierce Sweet Potato all around with fork
+Bake unwrapped in oven for 45 minutes
+Wait for baked sweet potato to cool
+Peel off skin and discard
+Mash peeled sweet potato in bowl until there are no lumps
+Season with salt
+Add flour quarter cup at a time and gently fold with spatula
+When it becomes less sticky, move to a lightly floured surface
+Continue to add flour and knead until it forms a dough ball
+Boil a large pot of seasoned water
+Roll out dough ball into a long dough snake about an inch wide
+Cut snake into 1/2 - 1 inch gnocchi pieces/
+To add grooves to the gnocchi, roll the pieces along the backside of a fork and set aside
+Add gnocchi to the pot in batches
+Gently stir water before adding them to prevent any sticking
+When the gnocchi start floating they can be removed and set aside (about 5 minutes)
+Melt a 1/2 stick of butter in a medium saucepan over medium-low heat
+Stir occasionally and add in sage leaves when butter starts to melt
+When butter starts to bubble and foam stir continuously and lower heat
+Once butter becomes golden brown remove from heat and toss gnocchi in sauce</pre>
         </section>
 
         <!-- Links Section -->
@@ -84,7 +109,7 @@
             .catch(error => console.error('Error loading navbar:', error));
 
         // Fetch recipe data and update the category link
-        const recipeName = "{Recipe Title}"; // Replace this with the actual recipe title dynamically
+        const recipeName = "Handmade Sweet Potato Gnocchi with Brown Butter Sage Sauce and Parmesan"; // Replace this with the actual recipe title dynamically
     
         fetch('functions/recipes.json')
             .then(response => response.json())

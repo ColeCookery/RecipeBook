@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{Recipe Title}</title>
+    <title>Bun Ga Nuong (Vietnamese Chicken & Vermicelli Noodle Bowl)</title>
     <link rel="stylesheet" href="functions/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -16,9 +16,9 @@
     <!-- Main Content Wrapper -->
     <main class="recipe-page">
         <header class="recipe-header">
-            <h1>{Recipe Title}</h1>
+            <h1>Bun Ga Nuong (Vietnamese Chicken & Vermicelli Noodle Bowl)</h1>
             <div class="image-container">
-                <img class="recipe-image" src="pictures/{Image URL}" alt="{Recipe Title}">
+                <img class="recipe-image" src="pictures/Bunganuong.jpg" alt="Bun Ga Nuong (Vietnamese Chicken & Vermicelli Noodle Bowl)">
             </div>
         </header>
 
@@ -26,14 +26,45 @@
         <section class="ingredients">
             <h2>Ingredients</h2>
             <pre>
-                {Ingredients}
+Chicken Breasts or Thighs
+Vermicelli Noodles
+Cucumber
+Carrot
+Iceberg Lettuce
+Bean Sprouts
+Fresh Cilantro
+Marinade
+	Fish Sauce
+	Soy Sauce
+	Sugar
+	Vegetable Oil
+	Lemongrass
+	Garlic
+	Pepper
+Sauce
+	Fish Sauce
+	Sugar
+	Lime Juice
+	Warm Water
             </pre>
         </section>
 
         <!-- Instructions Section -->
         <section class="instructions">
             <h2>Instructions</h2>
-            <pre>{Instructions}</pre>
+            <pre>Finely mince 2 lemongrass stalks and 3 garlic cloves
+Add to a bowl with 1 tbsp of each; Fish Sauce, Soy Sauce, Sugar, Vegetable Oil
+Season with white or black pepper and add in chicken
+Cover and marinade chicken for at least 1 hour
+Fill up a bowl with hot tap water and soak vermicelli noodles for about 15 minutes
+Sear the chicken over medium high heat for about 6 minutes on each side
+Julienne Carrot and Cucumber & Shred Lettuce
+Add carrot and cucumber to pan for the final couple minutes 
+To prepare the sauce, dissolve 3 tbsps of sugar in 1/2 cup of warm water
+Stir in 3 tbsps each of fish sauce and lime juice
+Layer cooked noodles, shredded lettuce, vegetables, sliced chicken and cilantro
+Drizzle with sauce and serve
+(Optional additions: Spring Rolls, Crushed Peanuts, Fried Shallots, Chili Oil)</pre>
         </section>
 
         <!-- Links Section -->
@@ -84,7 +115,7 @@
             .catch(error => console.error('Error loading navbar:', error));
 
         // Fetch recipe data and update the category link
-        const recipeName = "{Recipe Title}"; // Replace this with the actual recipe title dynamically
+        const recipeName = "Bun Ga Nuong (Vietnamese Chicken & Vermicelli Noodle Bowl)"; // Replace this with the actual recipe title dynamically
     
         fetch('functions/recipes.json')
             .then(response => response.json())

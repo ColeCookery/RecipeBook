@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{Recipe Title}</title>
+    <title>Turkey Smashburger</title>
     <link rel="stylesheet" href="functions/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -16,9 +16,9 @@
     <!-- Main Content Wrapper -->
     <main class="recipe-page">
         <header class="recipe-header">
-            <h1>{Recipe Title}</h1>
+            <h1>Turkey Smashburger</h1>
             <div class="image-container">
-                <img class="recipe-image" src="pictures/{Image URL}" alt="{Recipe Title}">
+                <img class="recipe-image" src="pictures/tsmashburger.jpg" alt="Turkey Smashburger">
             </div>
         </header>
 
@@ -26,14 +26,37 @@
         <section class="ingredients">
             <h2>Ingredients</h2>
             <pre>
-                {Ingredients}
+Ground Turkey
+White Onion
+American Cheese
+Bun
+Salt
+Burger Sauce
+	Ketchup
+	Mayonaise
+	Mustard
+	Pickle Juice
+
+Additional Toppings
             </pre>
         </section>
 
         <!-- Instructions Section -->
         <section class="instructions">
             <h2>Instructions</h2>
-            <pre>{Instructions}</pre>
+            <pre>Gently roll ground turkey into quarter-pound balls and set aside
+Slice white onion into very thin strips
+Get your flat cooking surface very hot
+     (Cast Iron or Griddles work best, has to be flat & hot)
+Place meatballs on surface and season with salt
+Sprinkle a handful of slice onions on top of the meatballs
+Take a flat spatula and press firmly down to flatten the meatballs into thin patties
+Let cook for a few minutes, until edges start to look crispy
+Flip patty over and top with cheese
+Place bottom bun on top of the cheese and top bun on top of that to steam
+Cook for a couple minutes until cheese is melted
+Coat bun with burger sauce
+Add additional toppings</pre>
         </section>
 
         <!-- Links Section -->
@@ -84,7 +107,7 @@
             .catch(error => console.error('Error loading navbar:', error));
 
         // Fetch recipe data and update the category link
-        const recipeName = "{Recipe Title}"; // Replace this with the actual recipe title dynamically
+        const recipeName = "Turkey Smashburger"; // Replace this with the actual recipe title dynamically
     
         fetch('functions/recipes.json')
             .then(response => response.json())

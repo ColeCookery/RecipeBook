@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{Recipe Title}</title>
+    <title>Chicken Gyro</title>
     <link rel="stylesheet" href="functions/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -16,9 +16,9 @@
     <!-- Main Content Wrapper -->
     <main class="recipe-page">
         <header class="recipe-header">
-            <h1>{Recipe Title}</h1>
+            <h1>Chicken Gyro</h1>
             <div class="image-container">
-                <img class="recipe-image" src="pictures/{Image URL}" alt="{Recipe Title}">
+                <img class="recipe-image" src="pictures/chickengyro.jpg" alt="Chicken Gyro">
             </div>
         </header>
 
@@ -26,14 +26,34 @@
         <section class="ingredients">
             <h2>Ingredients</h2>
             <pre>
-                {Ingredients}
+Chicken Breast
+Greek Pita Bread
+Romaine Lettuce
+Tomato
+Red Onion
+French Fries (Optional)
+Tzatziki
+	Plain Greek Yogurt
+	Shredded Cucumber
+	Lemon Juice & Zest
+	Olive Oil
+	Dill
+	Salt & Pepper
             </pre>
         </section>
 
         <!-- Instructions Section -->
         <section class="instructions">
             <h2>Instructions</h2>
-            <pre>{Instructions}</pre>
+            <pre>Cut chicken breast into cubes
+Season with salt & pepper
+Saute over medium high heat until edges start to crisp
+Sprinkle with dill and add a splash of lemon juice and finish cooking 
+Rough chop lettuce and tomato
+Slice red onion into thin strips
+In a bowl mix together greek yogurt with shredded cucumber and lemon juice & zest
+Season with salt & pepper and add a drizzle of olive oil
+Wrap all ingredients in pita bread and top with Tzatziki</pre>
         </section>
 
         <!-- Links Section -->
@@ -84,7 +104,7 @@
             .catch(error => console.error('Error loading navbar:', error));
 
         // Fetch recipe data and update the category link
-        const recipeName = "{Recipe Title}"; // Replace this with the actual recipe title dynamically
+        const recipeName = "Chicken Gyro"; // Replace this with the actual recipe title dynamically
     
         fetch('functions/recipes.json')
             .then(response => response.json())

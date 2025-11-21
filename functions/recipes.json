@@ -1,25 +1,9 @@
 [
     {
-        "name": "Chocolate Cake",
-        "link": "recipes/chocolate-cake.html",
-        "category": "desserts"
-    },
-    {
-        "name": "Spaghetti Bolognese",
-        "link": "spaghetti-bolognese.html",
-        "category": "pasta"
-    },
-    {
-        "name": "Cast Iron Chicken Breast with Creamy Spinach Tomato Feta Sauce",
-        "link": "2Cast_Iron_Chicken_Breast_with_Creamy_Spinach_Tomato_Feta_Sauce.html",
-        "image": "pictures/feta_chicken.jpg",
+        "name": "Momma's Meatloaf",
+        "link": "2Momma's_Meatloaf.html",
+        "image": "pictures/meatloaf.png",
         "category": "entrees"
-    },
-    {
-        "name": "Chili",
-        "link": "2Chili.html",
-        "image": "pictures/feta_chicken.jpg",
-        "category": "soup"
     },
     {
         "name": "Pulled Pork",
@@ -29,15 +13,130 @@
     },
     {
         "name": "Cast Iron Chicken Breast with Creamy Spinach Tomato Feta Sauce",
-        "link": "recipes/Cast_Iron_Chicken_Breast_with_Creamy_Spinach_Tomato_Feta_Sauce.html",
-        "image": "../pictures/feta_chicken.jpg",
-        "category": "Main Dishes"
+        "link": "2Cast_Iron_Chicken_Breast_with_Creamy_Spinach_Tomato_Feta_Sauce.html",
+        "image": "pictures/feta_chicken.jpg",
+        "category": "entrees"
     },
     {
-        "name": "Cast Iron Chicken Breast with Creamy Spinach Tomato Feta Sauce",
-        "link": "recipes/Cast_Iron_Chicken_Breast_with_Creamy_Spinach_Tomato_Feta_Sauce.html",
-        "image": "../pictures/feta_chicken.jpg",
-        "category": "Main Dishes"
-    }
+        "name": "Oven Roasted Chicken with Roasted Vegetables",
+        "link": "2Oven_Roasted_Chicken_with_Roasted_Vegetables.html",
+        "image": "pictures/roasted_chicken.png",
+        "category": "entrees"
+    },
+
+
+
+
+
+
+
+
+
+    {
+        "name": "Handmade Sweet Potato Gnocchi with Brown Butter Sage Sauce and Parmesan",
+        "link": "2Sweet_Potato_Gnocchi.html",
+        "image": "pictures/SPgnocchi.jpg",
+        "category": "pasta"
+    },
+    {
+        "name": "Four Layer Lasagna",
+        "link": "2Four_Layer_Lasagna.html",
+        "image": "pictures/lasagna.jpg",
+        "category": "pasta"
+    },
+
+
+
+
+
+
+    {
+        "name": "Barbacoa",
+        "link": "2Four_Layer_Lasagna.html",
+        "image": "pictures/l.jpg",
+        "category": "mexican"
+    },
+
+
+
+
+
+
+    {
+        "name": "Bun Ga Nuong (Vietnamese Chicken & Vermicelli Noodle Bowl)",
+        "link": "2Bun_Ga_Nuong.html",
+        "image": "pictures/Bunganuong.jpg",
+        "category": "asian"
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "name": "Dutch Oven Chili",
+        "link": "2Dutch_Oven_Chili.html",
+        "image": "pictures/chili.jpg",
+        "category": "soup"
+    },
+
+
+
+
+
+
+    {
+        "name": "Turkey Smashburger",
+        "link": "2Turkey_Smashburger.html",
+        "image": "pictures/tsmashburger.jpg",
+        "category": "sandwiches"
+    },
+    {
+        "name": "Chicken Gyro",
+        "link": "2Chicken_Gyro.html",
+        "image": "pictures/chickengyro.jpg",
+        "category": "sandwiches"
+    },
+
+ 
+    
+
+
+
+
+    {
+        "name": "Country Style BBQ Ribs",
+        "link": "2Country_Style_BBQ_Ribs.html",
+        "image": "pictures/bbqCSribs.jpg",
+        "category": "apps"
+    },
+
+    {
+        "name": "Twice Baked Mini Potatoes",
+        "link": "2Twice_Baked_Mini_Potatoes.html",
+        "image": "pictures/2bpotatoes.jpg",
+        "category": "apps"
+    },
+
+
+
+
+
+
+
+
+    
+    {
+        "name": "Chocolate Cake",
+        "link": "recipes/chocolate-cake.html",
+        "category": "desserts"
+    }  
     
 ]

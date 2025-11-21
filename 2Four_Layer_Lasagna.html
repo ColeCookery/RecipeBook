@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{Recipe Title}</title>
+    <title>Four Layer Lasagna</title>
     <link rel="stylesheet" href="functions/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -16,9 +16,9 @@
     <!-- Main Content Wrapper -->
     <main class="recipe-page">
         <header class="recipe-header">
-            <h1>{Recipe Title}</h1>
+            <h1>Four Layer Lasagna</h1>
             <div class="image-container">
-                <img class="recipe-image" src="pictures/{Image URL}" alt="{Recipe Title}">
+                <img class="recipe-image" src="pictures/lasagna.jpg" alt="Four Layer Lasagna">
             </div>
         </header>
 
@@ -26,14 +26,43 @@
         <section class="ingredients">
             <h2>Ingredients</h2>
             <pre>
-                {Ingredients}
+Lasagna Noodles
+Ground Beef or Turkey
+Ground Sausage (Sweet or Spicy)
+Onion
+Garlic
+Canned Whole Peeled Tomatoes
+Tomato Pasta
+Mozzarella
+Parmesan
+Ricotta
+Egg
+Italian Seasonings
+Fresh Parsley
+Olive Oil
+Salt & Pepper
             </pre>
         </section>
 
         <!-- Instructions Section -->
         <section class="instructions">
             <h2>Instructions</h2>
-            <pre>{Instructions}</pre>
+            <pre>Dice onion and a few garlic cloves
+Add to large pot over medium-high heat with splash of oil and salt
+When translucent, add in meat and mix
+Season with salt, pepper, and Italian seasonings
+When meat is mostly cooked stir in a small amount of tomato paste
+Add in a large can of whole peeled tomatoes, break them up, and stir in
+Turn down sauce to simmer
+Preheat oven to 375
+Boil a large pot of seasoned water
+Cook lasagna noodles
+Shred Mozzarella and Parmesan and set aside
+In a bowl combine ricotta with egg and fresh parsley (can add a splash of milk to thin)
+In a large baking dish start layering following this pattern:
+    Sauce, Noodles, Ricotta mixture
+Do this 4 times and then top lasagna with shredded mozzarella and parmesan
+Bake for 40 minutes or until cheese starts to brown</pre>
         </section>
 
         <!-- Links Section -->
@@ -84,7 +113,7 @@
             .catch(error => console.error('Error loading navbar:', error));
 
         // Fetch recipe data and update the category link
-        const recipeName = "{Recipe Title}"; // Replace this with the actual recipe title dynamically
+        const recipeName = "Four Layer Lasagna"; // Replace this with the actual recipe title dynamically
     
         fetch('functions/recipes.json')
             .then(response => response.json())
