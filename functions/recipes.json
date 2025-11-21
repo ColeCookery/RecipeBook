@@ -95,7 +95,7 @@
     {
         "name": "Turkey Smashburger",
         "link": "2Turkey_Smashburger.html",
-        "image": "pictures/tsmashburger.jpg",
+        "image": "pictures/tsmashburger.JPG",
         "category": "sandwiches"
     },
     {
@@ -114,14 +114,14 @@
     {
         "name": "Country Style BBQ Ribs",
         "link": "2Country_Style_BBQ_Ribs.html",
-        "image": "pictures/bbqCSribs.jpg",
+        "image": "pictures/bbqCSribs.JPG",
         "category": "apps"
     },
 
     {
         "name": "Twice Baked Mini Potatoes",
         "link": "2Twice_Baked_Mini_Potatoes.html",
-        "image": "pictures/2bpotatoes.jpg",
+        "image": "pictures/2bpotatoes.JPG",
         "category": "apps"
     },
 
@@ -134,9 +134,11 @@
 
     
     {
-        "name": "Chocolate Cake",
-        "link": "recipes/chocolate-cake.html",
+        "name": "Blueberry Crumble Pie",
+        "link": "recipes/Bluberry_Crumble_Pie.html",
+        "image": "pictures/blueberrypie.JPG",
         "category": "desserts"
     }  
     
 ]
+
