@@ -2,7 +2,7 @@
     {
         "name": "Momma's Meatloaf",
         "link": "2Momma's_Meatloaf.html",
-        "image": "pictures/meatloaf.png",
+        "image": "pictures/meatloaf.jpg",
         "category": "entrees"
     },
     {
@@ -141,4 +141,5 @@
     }  
     
 ]
+
 
