@@ -3,8 +3,8 @@ backend:
   branch: main
 
 # Shows a live preview pane while editing (uses your real site styles)
-site_url: https://ColeCookery.github.io/RecipeBook
-display_url: https://ColeCookery.github.io/RecipeBook
+site_url: https://colecookery.netlify.app
+display_url: https://colecookery.netlify.app
 
 media_folder: "assets/pictures"
 public_folder: "/assets/pictures"
