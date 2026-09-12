@@ -1,0 +1,27 @@
+<nav>
+    <div class="nav-title">
+        <a href="{{ '/' | relative_url }}" style="color: rgb(255, 255, 255); text-decoration: none;">Cole Cookery</a>
+    </div>
+    <div class="search-icon">
+        <a href="{{ '/search.html' | relative_url }}">
+            <i class="fa fa-search"></i>
+        </a>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+            <li><a href="https://www.instagram.com/colecookery/" target="_blank">Instagram</a></li>
+        </ul>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+        <i class="fa fa-bars"></i>
+    </button>
+    <div class="menu-dropdown">
+        <button class="close-menu" aria-label="Close menu">X</button>
+        <ul>
+            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+            <li><a href="{{ '/search.html' | relative_url }}">Search</a></li>
+            <li><a href="https://www.instagram.com/colecookery/" target="_blank">Instagram</a></li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<h2>Recipes</h2>
+
+<div class="groups">
+    <div id="recipe-list">
+        {% assign recipes = site.recipes | where: "category", page.category | where: "status", "published" | sort: "title" %}
+        {% for recipe in recipes %}
+        <div class="category-tile">
+            <a href="{{ recipe.url | relative_url }}">
+                <img src="{{ recipe.image | relative_url }}" alt="{{ recipe.title }}">
+                <span>{{ recipe.title }}</span>
+            </a>
+        </div>
+        {% endfor %}
+        {% if recipes.size == 0 %}
+        <p>No recipes here yet — add one from <code>/admin</code>.</p>
+        {% endif %}
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div id="navbar">
+            {% include navbar.html %}
+        </div>
+        {% if page.show_title != false %}<h1>{{ page.title }}</h1>{% endif %}
+    </div>
+
+    {{ content }}
+
+    <script>
+        function setupNavbarEventListeners() {
+            const toggleButton = document.querySelector('.menu-toggle');
+            const menuDropdown = document.querySelector('.menu-dropdown');
+            const closeButton = document.querySelector('.close-menu');
+            if (!toggleButton || !menuDropdown || !closeButton) return;
+
+            toggleButton.addEventListener('click', () => {
+                menuDropdown.classList.toggle('show');
+            });
+            closeButton.addEventListener('click', () => {
+                menuDropdown.classList.remove('show');
+            });
+        }
+        setupNavbarEventListeners();
+    </script>
+</body>
+</html>

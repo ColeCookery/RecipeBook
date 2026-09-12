@@ -1,0 +1,39 @@
+---
+layout: default
+show_title: false
+---
+<main class="recipe-page">
+    <header class="recipe-header">
+        <h1>{{ page.title }}</h1>
+        {% if page.status == "draft" %}
+        <p style="background:#fff3cd; border:1px solid #ffe08a; padding:8px 12px; border-radius:6px; display:inline-block;">
+            🚧 Draft — not listed on the site yet, only visible via this direct link.
+        </p>
+        {% endif %}
+        <div class="image-container">
+            <img class="recipe-image" src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+        </div>
+    </header>
+
+    <section class="ingredients">
+        <h2>Ingredients</h2>
+        <pre>{{ page.ingredients }}</pre>
+    </section>
+
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <pre>{{ page.instructions }}</pre>
+    </section>
+
+    {% if page.notes %}
+    <section class="instructions">
+        <h2>Notes</h2>
+        <pre>{{ page.notes }}</pre>
+    </section>
+    {% endif %}
+
+    <footer class="recipe-footer">
+        {% assign cat = site.data.categories | where: "slug", page.category | first %}
+        <a href="{{ cat.link | relative_url }}">Back to {{ cat.name }}</a> | <a href="{{ '/' | relative_url }}">Back to Homepage</a>
+    </footer>
+</main>
