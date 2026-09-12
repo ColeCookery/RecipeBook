@@ -1,0 +1,31 @@
+---
+layout: default
+title: Search Recipes
+permalink: /search.html
+---
+<input type="text" id="search" placeholder="Search for recipes...">
+
+<h2>All Recipes</h2>
+<div class="searchlist">
+    <ul id="recipe-list">
+        {% assign recipes = site.recipes | where: "status", "published" | sort: "title" %}
+        {% for recipe in recipes %}
+        <li><a href="{{ recipe.url | relative_url }}">{{ recipe.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+<footer class="recipe-footer">
+    <a href="{{ '/' | relative_url }}">Back to Homepage</a>
+</footer>
+
+<script>
+    document.getElementById('search').addEventListener('keyup', function() {
+        const query = this.value.toLowerCase();
+        const recipes = document.querySelectorAll('#recipe-list li');
+        recipes.forEach(function(recipe) {
+            const recipeName = recipe.textContent.toLowerCase();
+            recipe.style.display = recipeName.includes(query) ? '' : 'none';
+        });
+    });
+</script>

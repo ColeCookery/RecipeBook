@@ -1,0 +1,48 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Shows a live preview pane while editing (uses your real site styles)
+site_url: https://ColeCookery.github.io/RecipeBook
+display_url: https://ColeCookery.github.io/RecipeBook
+
+media_folder: "assets/pictures"
+public_folder: "/assets/pictures"
+
+collections:
+  - name: "recipes"
+    label: "Recipes"
+    folder: "_recipes"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    identifier_field: "title"
+    summary: "{{title}} — {{category}} ({{status}})"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "Entrees", value: "entrees" }
+          - { label: "Pasta", value: "pasta" }
+          - { label: "Mexican", value: "mexican" }
+          - { label: "Asian", value: "asian" }
+          - { label: "Soups & Stews", value: "soup" }
+          - { label: "Sandwiches", value: "sandwiches" }
+          - { label: "Pizza", value: "pizza" }
+          - { label: "Appetizers", value: "apps" }
+          - { label: "Breakfast", value: "breakfast" }
+          - { label: "Dessert", value: "desserts" }
+      - label: "Status"
+        name: "status"
+        widget: "select"
+        options:
+          - { label: "Draft (hidden from listings)", value: "draft" }
+          - { label: "Published (live on site)", value: "published" }
+        default: "draft"
+      - { label: "Photo", name: "image", widget: "image", required: false }
+      - { label: "Ingredients", name: "ingredients", widget: "text" }
+      - { label: "Instructions", name: "instructions", widget: "text" }
+      - { label: "Notes (optional)", name: "notes", widget: "text", required: false }

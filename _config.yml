@@ -1,0 +1,24 @@
+title: Cole Cookery
+description: Cole's Recipe Collection
+baseurl: ""
+url: ""
+
+collections:
+  recipes:
+    output: true
+    permalink: /recipes/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "recipes"
+    values:
+      layout: "recipe"
+      status: "published"
+
+exclude:
+  - README.md
+  - SETUP.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
